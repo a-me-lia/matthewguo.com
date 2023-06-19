@@ -8,10 +8,10 @@ export default function Navbar(props: any) {
 
 
 
-            <div className='relative flex flex-row h-full items-center lg:ml-20'>
+            <div className='relative flex flex-row h-full items-center lg:ml-20 pt-4'>
 
                 
-                <div className='ml-4'>       {/*for some reason this markup necessary to render correctly   */}
+                <div className='ml-8'>       {/*for some reason this markup necessary to render correctly   */}
 
                     <div className='relative w-[45px] h-[51px] md:w-[96px] md:h-[110px]'>
                         <Image  className=' z-0 object-cover' src='/../public/slash.png' alt ='' fill/>

@@ -19,7 +19,8 @@ module.exports = {
         primary: '#190038',
         darkAccent: '#2E0067',
         darkerPrimary: '#06002E',
-        lightaccent: '#5F077D'
+        lightaccent: '#5F077D',
+        darkbg: '#06002E'
       },
     },
   },
