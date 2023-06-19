@@ -24,7 +24,7 @@ export default function Home() {
         <div className='ml-48 mt-20 space-y-4'>
 
           <div className=' w-fit bg-darkAccent'>
-            <HeadlineDesktop text='Feng shui app, Simmons, secures 2M Series-A funding round →'/>
+            <HeadlineDesktop className='font-space' text='Feng shui app, Simmons, secures 2M Series-A funding round →'/>
           </div>
 
 
