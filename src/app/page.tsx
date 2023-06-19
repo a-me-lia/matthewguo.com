@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
 
 
-                <div className='mt-8 flex flex-col md:flex-row space-x-8 lg:space-x-32 md:items-center'>
+                <div className='mt-8 flex flex-col md:flex-row md:space-x-8 lg:space-x-32 md:items-center'>
 
                   
                 
