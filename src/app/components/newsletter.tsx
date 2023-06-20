@@ -12,7 +12,7 @@ const APIRequest = () => {
     setState('LOADING');
     setErrorMessage(null);
     try {
-      const response = await axios.post('/api/email', { email });
+      const response = await axios.post('../api/email.ts', { email });
       setState('SUCCESS');
     } catch (e: any) {
       setErrorMessage(e.response.data.error);
@@ -49,10 +49,10 @@ const APIRequest = () => {
       </div>
 
       {state === 'ERROR' && (
-        <p className="relative mt-2 w-full text-red-600">{errorMessage}</p>
+        <p className="relative mt-2 w-full text-red-600 z-50">{errorMessage}</p>
       )}
       {state === 'SUCCESS' && (
-        <p className="relative mt-2 w-full text-green-600">Success!</p>
+        <p className="relative mt-2 w-full text-green-600 z-50">Success!</p>
       )}
     </div>
   );

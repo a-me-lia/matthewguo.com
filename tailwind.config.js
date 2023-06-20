@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require('tailwindcss/defaultTheme');
-
 
 module.exports = {
   content: [
@@ -24,6 +22,22 @@ module.exports = {
         lightaccent: '#5F077D',
         darkbg: '#06002E',
       },
+      animation: {
+        marqueeSmall: 'marquee 30s linear infinite',
+        marqueeLarge: 'marquee 40s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '25%': { transform: 'translateX(-100%)' },
+          '50%': { transform: 'translateX(-200%)' },
+          '75%': { transform: 'translateX(-300%)' },
+          '100%': { transform: 'translateX(-400%)' },
+        },
+      },
+      rotate: {
+        '38': '38deg',
+      }
     },
   },
   plugins: [],

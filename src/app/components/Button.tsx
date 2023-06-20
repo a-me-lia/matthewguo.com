@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function button(props: any) {
+export default function Button(props: any) {
   return (
     <div>
       <div className="w-fit border-2 border-white">

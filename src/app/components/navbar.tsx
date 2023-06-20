@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Slash from './slash';
 
 export default function Navbar(props: any) {
   return (
@@ -9,13 +10,9 @@ export default function Navbar(props: any) {
           <div className="ml-8">
             {' '}
             {/* for some reason this markup necessary to render correctly   */}
-            <div className="relative h-[51px] w-[45px] md:h-[110px] md:w-[96px]">
-              <Image
-                className=" z-0 object-cover"
-                src="/slash.png"
-                alt=""
-                fill
-              />
+            <div className="relative">
+      <div className='md:hidden'><Slash h='51' w='45'></Slash></div>
+      <div className='hidden md:block'><Slash h='110' w='96'></Slash></div>
             </div>
           </div>
 
@@ -37,7 +34,7 @@ export default function Navbar(props: any) {
               </Link>
             </div>
 
-            <div className="items-end space-y-2 pr-4 md:hidden">
+            <div className="items-end space-y-2 pr-8 md:hidden">
               <span className="ml-3 block h-0.5 w-5 bg-white"></span>
               <span className="block h-0.5 w-8 bg-white"></span>
               <span className="ml-2 block h-0.5 w-6 bg-white"></span>
