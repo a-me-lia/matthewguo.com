@@ -135,7 +135,7 @@ export default function Home() {
               Latest News
             </h1>
 
-            <ul className='mt-12 flex flex-row md:flex-col overflow-x-auto space-x-4 md:space-x-0 md:space-y-6'>
+            <ul className='mt-12 flex flex-row md:flex-col overflow-x-auto space-x-4 md:space-x-0 md:space-y-8 md:h-[400px]'>
 
 
             <li className='relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
