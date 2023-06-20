@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Newsletter from './newsletter'
+import Newsletter from '../newsletter'
 
 export default function Footer(props: any) {
   return (

@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Navbar from '@/app/navbar'
-import GlowButton from './glowbutton'
-import Button from './Button'
-import HeadlineDesktop from './headlineDesktop'
-import HeadlineMobile from './headlineMobile'
-import Arrow from './→'
-import Footer from './footer'
+import Navbar from './components/navbar'
+import GlowButton from './components/glowbutton'
+import Button from './components/Button'
+import HeadlineDesktop from './components/headlineDesktop'
+import HeadlineMobile from './components/headlineMobile'
+import Arrow from './components/→'
+import Footer from './components/footer'
 
 
 
