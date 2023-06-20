@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import Arrow from './components/→';
 import Button from './components/Button';
 import Footer from './components/footer';
@@ -12,12 +11,7 @@ export default function Home() {
   return (
     <main>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com"></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap"
-          rel="stylesheet"
-        ></link>
+
       </head>
 
       <body className=" mx-auto min-h-screen">
@@ -32,11 +26,11 @@ export default function Home() {
               />
               {/* should add HeadlineMobile later */}
             </div>
-            <h1 className="hidden pb-4  font-space text-[64px] font-bold md:block">
+            <h1 className="hidden pb-4 font-sans text-[64px] font-bold md:block">
               Designer, Developer, <br />
               Pianist
             </h1>
-            <h1 className="pb-4 font-space text-[40px] md:hidden">
+            <h1 className="pb-4 font-sans text-[40px] md:hidden">
               Designer, <br /> Developer, <br />
               Pianist
             </h1>
@@ -50,7 +44,7 @@ export default function Home() {
                   <div className="relative h-[51px] w-[45px] md:h-[110px] md:w-[96px]">
                     <Image
                       className="z-0 object-cover lg:block"
-                      src="/public/slash.png"
+                      src="/slash.png"
                       alt="a slash image for the logo"
                       fill
                     />

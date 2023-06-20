@@ -13,7 +13,7 @@ export default function Footer(props: any) {
               <div className="relative h-[51px] w-[45px] md:h-[110px] md:w-[96px]">
                 <Image
                   className=" z-0 object-cover"
-                  src="/../public/slash.png"
+                  src="/slash.png"
                   alt=""
                   fill
                 />
