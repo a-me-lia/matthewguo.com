@@ -1,8 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import Slash from './slash';
 
-import Newsletter from './newsletter';
+{
+  /* import Newsletter from './newsletter'; */
+}
 
 export default function Footer(props: any) {
   return (
@@ -11,10 +14,14 @@ export default function Footer(props: any) {
         <div className="flex flex-col space-y-8 lg:ml-20 lg:w-full xl:flex-row  xl:items-center xl:space-y-0">
           <Link href="/">
             <div className="flex flex-row items-center ">
-            <div className="relative">
-      <div className='md:hidden'><Slash h='51' w='45'></Slash></div>
-      <div className='hidden md:block'><Slash h='110' w='96'></Slash></div>
-            </div>
+              <div className="relative">
+                <div className="md:hidden">
+                  <Slash h="51" w="45"></Slash>
+                </div>
+                <div className="hidden md:block">
+                  <Slash h="110" w="96"></Slash>
+                </div>
+              </div>
 
               <h1 className="z-50 ml-[-32px] font-space text-xl opacity-80 md:ml-[-64px] md:text-4xl lg:ml-[-64px]">
                 matthew_guo
@@ -39,7 +46,7 @@ export default function Footer(props: any) {
           <a className="text-[18px] text-white lg:uppercase ">
             subscribe to updates
           </a>
-          <Newsletter></Newsletter>
+          {/* <Newsletter></Newsletter> */}
         </div>
       </div>
     </footer>

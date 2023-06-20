@@ -36,8 +36,8 @@ module.exports = {
         },
       },
       rotate: {
-        '38': '38deg',
-      }
+        38: '38deg',
+      },
     },
   },
   plugins: [],

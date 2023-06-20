@@ -12,7 +12,7 @@ const APIRequest = () => {
     setState('LOADING');
     setErrorMessage(null);
     try {
-      const response = await axios.post('../api/email.ts', { email });
+      const response = await axios.post('./api/email.ts', { email });
       setState('SUCCESS');
     } catch (e: any) {
       setErrorMessage(e.response.data.error);

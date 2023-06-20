@@ -7,21 +7,20 @@ import Footer from './components/footer';
 import GlowButton from './components/glowbutton';
 import HeadlineDesktop from './components/headlineDesktop';
 import HeadlineMobile from './components/headlineMobile';
+import HeroGraphic from './components/heroGraphic';
 import Navbar from './components/navbar';
 import Slash from './components/slash';
-import HeroGraphic from './components/heroGraphic';
 
 export default function Home() {
   return (
     <main>
-      <head></head>
-
-      <body className="mx-auto min-h-screen font-sans">
+      <div className="mx-auto min-h-screen font-sans">
         <div className="flex min-h-screen flex-col bg-primary text-white">
-          <Navbar pageTitle="home" className=""/>
+          <Navbar pageTitle="home" className="" />
 
-
-          <div className='absolute top-72 right-0 w-[326px] h-[270px] md:opacity-25 md:w-[600px] md:h-[500px] md:top-32 opacity-50 lg:opacity-50 xl:right-2'><HeroGraphic></HeroGraphic></div>
+          <div className="absolute right-0 top-72 h-[270px] w-[326px] opacity-50 md:top-32 md:h-[500px] md:w-[600px] md:opacity-25 lg:opacity-50 xl:right-2">
+            <HeroGraphic></HeroGraphic>
+          </div>
 
           <div className="ml-6 mt-20 space-y-4 lg:ml-36">
             <div className="hidden md:block">
@@ -42,25 +41,29 @@ export default function Home() {
               {/* should add HeadlineMobile later */}
             </div>
 
-            <h1 className="relative hidden pb-4 font-space text-[64px] font-bold md:block z-10">
+            <h1 className="relative z-10 hidden pb-4 font-space text-[64px] font-bold md:block">
               Designer, Developer, <br />
               Pianist
             </h1>
-            <h1 className="relative pb-4 font-space text-[40px] md:hidden z-10">
+            <h1 className="relative z-10 pb-4 font-space text-[40px] md:hidden">
               Designer, <br /> Developer, <br />
               Pianist
             </h1>
             <GlowButton href="#" text="Hire me now" />
           </div>
 
-          <div className="mt-36 md:mt-32 h-min rounded-t-[80px] bg-gradient-to-b from-darkbg via-darkbg via-60% to-transparent drop-shadow-[0_-200px_200px_rgba(255,255,255,0.04)] lg:rounded-t-[160px]">
+          <div className="mt-36 h-min rounded-t-[80px] bg-gradient-to-b from-darkbg via-darkbg via-60% to-transparent drop-shadow-[0_-200px_200px_rgba(255,255,255,0.04)] md:mt-32 lg:rounded-t-[160px]">
             <div className="mx-6 mt-8 flex flex-col lg:mx-36">
               <div className="flex flex-row items-center">
                 <div className="ml-[-32px] hidden lg:block">
-                <div className="relative">
-      <div className='md:hidden'><Slash h='51' w='45'></Slash></div>
-      <div className='hidden md:block'><Slash h='110' w='96'></Slash></div>
-            </div>
+                  <div className="relative">
+                    <div className="md:hidden">
+                      <Slash h="51" w="45"></Slash>
+                    </div>
+                    <div className="hidden md:block">
+                      <Slash h="110" w="96"></Slash>
+                    </div>
+                  </div>
                 </div>
 
                 <h1 className="z-10 pt-6 font-space text-[24px] font-bold md:text-[64px] lg:ml-[-60px]">
@@ -82,31 +85,17 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8 flex flex-col md:w-1/2">
-
-                <Link
-                    href="projects"
-                    className="relative flex w-full flex-row border-b-2 py-3 "
-                  >
-                    <div >
-                    <p className="w-full md:text-[36px]">Web/App Design </p>
-                    <div className="absolute hidden  hover:block top-0 bottom-0 left-0 right-0">
-                      <div className='absolute  right-0 top-4'><Arrow w="53" h="46"></Arrow></div>
-                    </div>
-                    
-                    </div>
-                  </Link>
-
-
                   <Link
                     href="projects"
                     className="relative flex w-full flex-row border-b-2 py-3 "
                   >
-                    <div >
-                    <p className="w-full md:text-[36px]">Electronics </p>
-                    <div className="absolute hidden  hover:block top-0 bottom-0 left-0 right-0">
-                      <div className='absolute  right-0 top-4'><Arrow w="53" h="46"></Arrow></div>
-                    </div>
-                    
+                    <div>
+                      <p className="w-full md:text-[36px]">Web/App Design </p>
+                      <div className="absolute inset-0  hidden hover:block">
+                        <div className="absolute  right-0 top-4">
+                          <Arrow w="53" h="46"></Arrow>
+                        </div>
+                      </div>
                     </div>
                   </Link>
 
@@ -114,15 +103,29 @@ export default function Home() {
                     href="projects"
                     className="relative flex w-full flex-row border-b-2 py-3 "
                   >
-                    <div >
-                    <p className="w-full md:text-[36px]">Piano and Music </p>
-                    <div className="absolute hidden  hover:block top-0 bottom-0 left-0 right-0">
-                      <div className='absolute  right-0 top-4'><Arrow w="53" h="46"></Arrow></div>
-                    </div>
-                    
+                    <div>
+                      <p className="w-full md:text-[36px]">Electronics </p>
+                      <div className="absolute inset-0  hidden hover:block">
+                        <div className="absolute  right-0 top-4">
+                          <Arrow w="53" h="46"></Arrow>
+                        </div>
+                      </div>
                     </div>
                   </Link>
 
+                  <Link
+                    href="projects"
+                    className="relative flex w-full flex-row border-b-2 py-3 "
+                  >
+                    <div>
+                      <p className="w-full md:text-[36px]">Piano and Music </p>
+                      <div className="absolute inset-0  hidden hover:block">
+                        <div className="absolute  right-0 top-4">
+                          <Arrow w="53" h="46"></Arrow>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
               </div>
 
@@ -131,80 +134,137 @@ export default function Home() {
           </div>
 
           <div className="mx-6 lg:mx-36">
-            <h1 className="z-10 md:pt-6 font-space text-[24px] font-bold md:text-[64px]">
+            <h1 className="z-10 font-space text-[24px] font-bold md:pt-6 md:text-[64px]">
               Latest News
             </h1>
 
-            <ul className='mt-12 flex flex-row md:flex-col overflow-x-auto space-x-4 md:space-x-0 md:space-y-10 md:h-[400px] md:border-t-4 md:rounded-t-[80px] md:border-b-4 md:rounded-b-[80px] md:bg-gradient-to-t from-darkerPrimary via-transparent via-20% '>
+            <ul className="mt-12 flex flex-row space-x-4 overflow-x-auto from-darkerPrimary via-transparent via-20% md:h-[400px] md:flex-col md:space-x-0 md:space-y-10 md:rounded-[80px] md:border-y-4 md:bg-gradient-to-t">
+              <li className="relative h-[500px] w-[300px]  shrink-0 border-b-2 border-white bg-gradient-to-b from-darkAccent  md:mt-20 md:h-[240px] md:w-full md:rounded-[20px] md:border-none md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% ">
+                <div className="flex flex-col md:flex-row-reverse md:p-[10px]">
+                  <div className="relative h-[200px] w-full shrink-0 md:h-[220px] md:w-[380px]">
+                    <Image
+                      alt=""
+                      src="/siemens.png"
+                      className="object-cover  md:rounded-[20px]"
+                      fill
+                    ></Image>
 
-
-
-            <li className='md:mt-20 relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
-                <div className='flex flex-col md:flex-row-reverse md:p-[10px]'>
-                  <div className='relative flex-shrink-0 w-full h-[200px] md:h-[220px] md:w-[380px]'><Image src='/siemens.png' className='object-cover  md:rounded-[20px]'fill></Image>
-
-                  <div className="absolute rounded-[20px] bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80 z-0">   <div className='relative mt-[73px] ml-[130px] z-50'>                  <Arrow h='75' w='120' ></Arrow></div>    </div>
+                    <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80">
+                      {' '}
+                      <div className="relative z-50 ml-[130px] mt-[73px]">
+                        {' '}
+                        <Arrow h="75" w="120"></Arrow>
+                      </div>{' '}
+                    </div>
                   </div>
-                    
-                  <div className='p-4 w-full flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
-                  
-                  
-                  <h1 className='uppercase  text-[18px]'>web and app design</h1>
 
-                  <h1 className='capitalize '>bing chilling website</h1>
-                  <p className='xl:w-2/3'>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
-                  <Link href='#' className='absolute bottom-4 capitalize underline'>go to blog post ></Link>
+                  <div className="flex w-full flex-col space-y-4 p-4 md:mx-8 md:space-y-2">
+                    <h1 className="text-[18px]  uppercase">
+                      web and app design
+                    </h1>
+
+                    <h1 className="capitalize ">bing chilling website</h1>
+                    <p className="xl:w-2/3">
+                      She is notably very kind, friendly, cheerful, and
+                      outgoing. It is shown that Marin greatly dislikes
+                      overly-critical people.
+                    </p>
+                    <Link
+                      href="#"
+                      className="absolute bottom-4 capitalize underline"
+                    >
+                      go to blog post{' '}
+                    </Link>
                   </div>
-                  <div className='flex-shrink-none hidden md:block h-[100px] w-[8px] bg-lightaccent rounded-full self-center'></div>
-
+                  <div className="shrink-0 hidden h-[100px] w-[8px] self-center rounded-full bg-lightaccent md:block"></div>
                 </div>
               </li>
 
+              <li className="relative h-[500px]  w-[300px] shrink-0 border-b-2 border-white bg-gradient-to-b  from-darkAccent md:h-[240px] md:w-full md:rounded-[20px] md:border-none md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% ">
+                <div className="flex flex-col md:flex-row-reverse  md:p-[10px]">
+                  <div className="relative h-[200px] w-full shrink-0 md:h-[220px] md:w-[380px]">
+                    <Image
+                      alt="placeholder"
+                      src="/siemens.png"
+                      className="object-cover  md:rounded-[20px]"
+                      fill
+                    ></Image>
 
-              <li className='relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
-                <div className='flex flex-col md:flex-row-reverse  md:p-[10px]'>
-                  <div className='relative flex-shrink-0 w-full h-[200px] md:h-[220px] md:w-[380px]'><Image src='/siemens.png' className='object-cover  md:rounded-[20px]'fill></Image>
-
-                  <div className="absolute rounded-[20px] bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80 z-0">   <div className='relative mt-[73px] ml-[130px] z-50'>                  <Arrow h='75' w='120' ></Arrow></div>    </div>
+                    <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80">
+                      {' '}
+                      <div className="relative z-50 ml-[130px] mt-[73px]">
+                        {' '}
+                        <Arrow h="75" w="120"></Arrow>
+                      </div>{' '}
+                    </div>
                   </div>
-                    
-                  <div className='p-4 w-full flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
-                  
-                  
-                  <h1 className='uppercase text-[18px]'>web and app design</h1>
 
-                  <h1 className='capitalize '>bing chilling website</h1>
-                  <p className='xl:w-2/3'>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
-                  <Link href='#' className='absolute bottom-4 capitalize underline'>go to blog post ></Link>
+                  <div className="flex w-full flex-col space-y-4 p-4 md:mx-8 md:space-y-2">
+                    <h1 className="text-[18px] uppercase">
+                      web and app design
+                    </h1>
+
+                    <h1 className="capitalize ">bing chilling website</h1>
+                    <p className="xl:w-2/3">
+                      She is notably very kind, friendly, cheerful, and
+                      outgoing. It is shown that Marin greatly dislikes
+                      overly-critical people.
+                    </p>
+                    <Link
+                      href="#"
+                      className="absolute bottom-4 capitalize underline"
+                    >
+                      go to blog post{' '}
+                    </Link>
                   </div>
-                  <div className='flex-shrink-none hidden md:block h-[100px] w-[8px] bg-lightaccent rounded-full self-center'></div>
-
+                  <div className="shrink-0 hidden h-[100px] w-[8px] self-center rounded-full bg-lightaccent md:block"></div>
                 </div>
               </li>
-              <li className=' relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
-                <div className='flex flex-col md:flex-row-reverse  md:p-[10px]'>
-                  <div className='relative flex-shrink-0 w-full h-[200px] md:h-[220px] md:w-[380px]'><Image src='/siemens.png' className='object-cover  md:rounded-[20px]'fill></Image>
+              <li className=" relative h-[500px]  w-[300px] shrink-0 border-b-2 border-white bg-gradient-to-b  from-darkAccent md:h-[240px] md:w-full md:rounded-[20px] md:border-none md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% ">
+                <div className="flex flex-col md:flex-row-reverse  md:p-[10px]">
+                  <div className="relative h-[200px] w-full shrink-0 md:h-[220px] md:w-[380px]">
+                    <Image
+                      alt=""
+                      src="/siemens.png"
+                      className="object-cover  md:rounded-[20px]"
+                      fill
+                    ></Image>
 
-                  <div className="absolute rounded-[20px] bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80 z-0">   <div className='relative mt-[73px] ml-[130px] z-50'>                  <Arrow h='75' w='120' ></Arrow></div>    </div>
+                    <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80">
+                      {' '}
+                      <div className="relative z-50 ml-[130px] mt-[73px]">
+                        {' '}
+                        <Arrow h="75" w="120"></Arrow>
+                      </div>{' '}
+                    </div>
                   </div>
-                    
-                  <div className='p-4 w-full flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
-                  
-                  
-                  <h1 className='uppercase  text-[18px]'>web and app design</h1>
 
-                  <h1 className='capitalize '>bing chilling website</h1>
-                  <p className='xl:w-2/3'>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
-                  <Link href='#' className='absolute bottom-4 capitalize underline'>go to blog post ></Link>
+                  <div className="flex w-full flex-col space-y-4 p-4 md:mx-8 md:space-y-2">
+                    <h1 className="text-[18px]  uppercase">
+                      web and app design
+                    </h1>
+
+                    <h1 className="capitalize ">bing chilling website</h1>
+                    <p className="xl:w-2/3">
+                      She is notably very kind, friendly, cheerful, and
+                      outgoing. It is shown that Marin greatly dislikes
+                      overly-critical people.
+                    </p>
+                    <Link
+                      href="#"
+                      className="absolute bottom-4 capitalize underline"
+                    >
+                      go to blog post
+                    </Link>
                   </div>
-                  <div className='flex-shrink-none hidden md:block h-[100px] w-[8px] bg-lightaccent rounded-full self-center'></div>
-
+                  <div className="shrink-0 hidden h-[100px] w-[8px] self-center rounded-full bg-lightaccent md:block"></div>
                 </div>
               </li>
 
-              <li className='py-12 w-full '><h1 className=' text-center hidden md:block'>uwu</h1></li>
+              <li className="w-full py-12 ">
+                <h1 className=" hidden text-center md:block">uwu</h1>
+              </li>
             </ul>
-   
 
             <div className="mb-8 mt-16 h-[10px] w-full rounded-full bg-gradient-to-b from-transparent via-lightaccent to-transparent md:mt-32"></div>
             <h1 className="z-10 py-6 font-space text-[24px] font-bold md:text-[64px]">
@@ -246,7 +306,7 @@ export default function Home() {
 
           <Footer></Footer>
         </div>
-      </body>
+      </div>
     </main>
   );
 }
