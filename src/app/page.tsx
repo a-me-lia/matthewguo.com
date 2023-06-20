@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/app/navbar'
-import GlowButton from './Glowbutton'
+import GlowButton from './glowbutton'
 import Button from './Button'
 import HeadlineDesktop from './headlineDesktop'
 import HeadlineMobile from './headlineMobile'
 import Arrow from './→'
+import Footer from './footer'
+
 
 
 export default function Home() {
@@ -14,7 +16,7 @@ export default function Home() {
     <main>
       <head>
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+          <link rel="preconnect" href="https://fonts.gstatic.com" ></link>
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet"></link>
       </head>
 
@@ -35,9 +37,9 @@ export default function Home() {
             <GlowButton href='#' text='Hire me now'/>
           </div>
 
-          <div className='h-min bg-gradient-to-b from-darkbg to-transparent rounded-t-[80px] lg:rounded-t-[160px] mt-24 drop-shadow-[0_-200px_200px_rgba(255,255,255,0.04)]'>
+          <div className='h-min bg-gradient-to-b from-darkbg via-darkbg via-60% to-transparent rounded-t-[80px] lg:rounded-t-[160px] mt-24 drop-shadow-[0_-200px_200px_rgba(255,255,255,0.04)]'>
            
-            <div className='flex flex-col mx-10 lg:mx-36 mt-8'>
+            <div className='flex flex-col mx-6 lg:mx-36 mt-8'>
                 <div className='flex flex-row items-center'>
 
                 <div className='ml-[-32px] hidden lg:block'>      
@@ -80,14 +82,52 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className='w-full h-[10px] mt-16 md:mt-32 mb-8 bg-gradient-to-b from-transparent via-lightaccent to-transparent'></div>
-
-
+                <div className='w-full h-[10px] mt-16 md:mt-32 mb-8 bg-gradient-to-b from-transparent via-lightaccent to-transparent rounded-full'></div>
             </div>
+
 
           </div>
 
-      </div>
+          
+          <div className='mx-6 lg:mx-36'>
+            <h1 className='text-[24px] md:text-[64px] pt-6 font-space font-bold z-10'>Latest News</h1>
+
+            <div className='w-full h-[10px] mt-16 md:mt-32 mb-8 bg-gradient-to-b from-transparent via-lightaccent to-transparent rounded-full'></div>
+            <h1 className='text-[24px] md:text-[64px] py-6 font-space font-bold z-10'>Blog</h1>
+
+
+            <ul className='space-y-6 lg:space-y-4 text-[16px] lg:text-[24px] capitalize items-center'>
+
+              <li className='flex flex-col lg:flex-row '>
+                <p className='font-space font-bold w-1/3'>2023.06.69</p>
+                <Link href='#' className='w-2/3'>i have a website now!</Link>
+              </li>
+
+              <li className='flex flex-col lg:flex-row '>
+                <p className='font-space font-bold w-1/3'>2023.06.69</p>
+                <Link href='#' className='w-2/3'>interview with emiliano garcia-lopez: on feng shui and ella simmons</Link>
+              </li>
+
+              <li className='flex flex-col lg:flex-row'>
+                <p className='font-space font-bold w-1/3'>2023.06.69</p>
+                <Link href='#' className='w-2/3'>i have a website now!</Link>
+              </li>
+
+              <li className='flex flex-col lg:flex-row '>
+                <p className='font-space font-bold w-1/3'>2023.06.69</p>
+                <Link href='#' className='w-2/3'>interview with emiliano garcia-lopez: on feng shui and ella simmons</Link>
+              </li>
+
+            </ul>
+
+  
+          </div>
+
+
+          <Footer></Footer>
+
+
+        </div>
       </body>
 
 
