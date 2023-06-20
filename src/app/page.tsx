@@ -135,23 +135,24 @@ export default function Home() {
               Latest News
             </h1>
 
-            <ul className='mt-12 flex flex-row md:flex-col overflow-x-auto space-x-4 md:space-x-0 md:space-y-8 md:h-[400px]'>
+            <ul className='mt-12 flex flex-row md:flex-col overflow-x-auto space-x-4 md:space-x-0 md:space-y-10 md:h-[400px] md:border-t-4 md:rounded-t-[80px] md:border-b-4 md:rounded-b-[80px] md:bg-gradient-to-t from-darkerPrimary via-transparent via-20% '>
 
 
-            <li className='relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
-                <div className='flex flex-col md:flex-row-reverse  p-[10px]'>
+
+            <li className='md:mt-20 relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
+                <div className='flex flex-col md:flex-row-reverse md:p-[10px]'>
                   <div className='relative flex-shrink-0 w-full h-[200px] md:h-[220px] md:w-[380px]'><Image src='/siemens.png' className='object-cover  md:rounded-[20px]'fill></Image>
 
                   <div className="absolute rounded-[20px] bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80 z-0">   <div className='relative mt-[73px] ml-[130px] z-50'>                  <Arrow h='75' w='120' ></Arrow></div>    </div>
                   </div>
                     
-                  <div className='p-4 flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
+                  <div className='p-4 w-full flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
                   
                   
                   <h1 className='uppercase  text-[18px]'>web and app design</h1>
 
                   <h1 className='capitalize '>bing chilling website</h1>
-                  <p>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
+                  <p className='xl:w-2/3'>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
                   <Link href='#' className='absolute bottom-4 capitalize underline'>go to blog post ></Link>
                   </div>
                   <div className='flex-shrink-none hidden md:block h-[100px] w-[8px] bg-lightaccent rounded-full self-center'></div>
@@ -161,45 +162,47 @@ export default function Home() {
 
 
               <li className='relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
-                <div className='flex flex-col md:flex-row-reverse  p-[10px]'>
+                <div className='flex flex-col md:flex-row-reverse  md:p-[10px]'>
                   <div className='relative flex-shrink-0 w-full h-[200px] md:h-[220px] md:w-[380px]'><Image src='/siemens.png' className='object-cover  md:rounded-[20px]'fill></Image>
 
                   <div className="absolute rounded-[20px] bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80 z-0">   <div className='relative mt-[73px] ml-[130px] z-50'>                  <Arrow h='75' w='120' ></Arrow></div>    </div>
                   </div>
                     
-                  <div className='p-4 flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
+                  <div className='p-4 w-full flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
                   
                   
                   <h1 className='uppercase text-[18px]'>web and app design</h1>
 
                   <h1 className='capitalize '>bing chilling website</h1>
-                  <p>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
+                  <p className='xl:w-2/3'>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
                   <Link href='#' className='absolute bottom-4 capitalize underline'>go to blog post ></Link>
                   </div>
                   <div className='flex-shrink-none hidden md:block h-[100px] w-[8px] bg-lightaccent rounded-full self-center'></div>
 
                 </div>
               </li>
-              <li className='relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
-                <div className='flex flex-col md:flex-row-reverse  p-[10px]'>
+              <li className=' relative flex-shrink-0  h-[500px] w-[300px] md:h-[240px] md:w-full border-b-2  md:rounded-[20px] border-white md:border-none bg-gradient-to-b from-darkAccent md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% '>
+                <div className='flex flex-col md:flex-row-reverse  md:p-[10px]'>
                   <div className='relative flex-shrink-0 w-full h-[200px] md:h-[220px] md:w-[380px]'><Image src='/siemens.png' className='object-cover  md:rounded-[20px]'fill></Image>
 
                   <div className="absolute rounded-[20px] bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80 z-0">   <div className='relative mt-[73px] ml-[130px] z-50'>                  <Arrow h='75' w='120' ></Arrow></div>    </div>
                   </div>
                     
-                  <div className='p-4 flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
+                  <div className='p-4 w-full flex flex-col space-y-4 md:space-y-2 md:ml-8 md:mr-8'>                  
                   
                   
                   <h1 className='uppercase  text-[18px]'>web and app design</h1>
 
                   <h1 className='capitalize '>bing chilling website</h1>
-                  <p>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
+                  <p className='xl:w-2/3'>She is notably very kind, friendly, cheerful, and outgoing. It is shown that Marin greatly dislikes overly-critical people.</p>
                   <Link href='#' className='absolute bottom-4 capitalize underline'>go to blog post ></Link>
                   </div>
                   <div className='flex-shrink-none hidden md:block h-[100px] w-[8px] bg-lightaccent rounded-full self-center'></div>
 
                 </div>
               </li>
+
+              <li className='py-12 w-full '><h1 className=' text-center hidden md:block'>uwu</h1></li>
             </ul>
    
 
