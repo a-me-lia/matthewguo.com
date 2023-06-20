@@ -13,7 +13,7 @@ const inter = Inter({
 const space_grotesk = Space_Grotesk({
   weight: ['400', '700'],
   subsets: ['latin'],
-  variable: '--font-space_grotesk',
+  variable: '--font-space-grotesk',
 });
 
 
@@ -29,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      <html lang="en">
-      <body className={`${inter.variable}, ${space_grotesk.variable}, font-sans`}>{children}</body>
+      <html lang="en" className={`${inter.variable} font-sans  ${space_grotesk.variable} font-space`}>
+      <body>{children}</body>
     </html>
   );
 }

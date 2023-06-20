@@ -14,7 +14,7 @@ export default function Home() {
 
       </head>
 
-      <body className=" mx-auto min-h-screen">
+      <body className=" mx-auto font-sans min-h-screen">
         <div className="flex min-h-screen flex-col bg-primary text-white">
           <Navbar pageTitle="home" className="" />
 
@@ -26,11 +26,11 @@ export default function Home() {
               />
               {/* should add HeadlineMobile later */}
             </div>
-            <h1 className="hidden pb-4 font-sans text-[64px] font-bold md:block">
+            <h1 className="hidden pb-4 font-space text-[64px] font-bold md:block">
               Designer, Developer, <br />
               Pianist
             </h1>
-            <h1 className="pb-4 font-sans text-[40px] md:hidden">
+            <h1 className="pb-4 font-space text-[40px] md:hidden">
               Designer, <br /> Developer, <br />
               Pianist
             </h1>

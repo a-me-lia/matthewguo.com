@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
+
 module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,8 +14,8 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       fontFamily: {
-        serif: ['var(--font-space)', ...fontFamily.serif],
-        sans: ['var(--font-inter)', ...fontFamily.sans],
+        space: ['var(--font-space-grotesk)'],
+        sans: ['var(--font-inter)'],
       },
       colors: {
         primary: '#190038',
