@@ -10,7 +10,7 @@ import Footer from './../components/footer'
 
 
 
-export default function Home() {
+export default function Projects() {
   return (
     
     <main>
@@ -25,7 +25,7 @@ export default function Home() {
       <div className='flex flex-col bg-primary min-h-screen'>
         
 
-          <Navbar pageTitle ='home' className=''/>
+          <Navbar pageTitle ='projects' className=''/>
 
           <div className='ml-10 lg:ml-36 mt-20 space-y-4'>
             <div className='hidden md:block'>
