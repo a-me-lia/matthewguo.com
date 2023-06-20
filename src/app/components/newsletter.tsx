@@ -36,6 +36,7 @@ const APIRequest = () => {
         />
 
         <button
+          // eslint-disable-next-line tailwindcss/no-custom-classname
           className={` bg-darkAccent px-5 py-1 text-white hover:bg-slate-500 ${
             state === 'LOADING' ? 'button-gradient-loading' : ''
           }`}

@@ -1,20 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
+
 import Arrow from './components/→';
 import Button from './components/Button';
 import Footer from './components/footer';
 import GlowButton from './components/glowbutton';
 import HeadlineDesktop from './components/headlineDesktop';
+import HeadlineMobile from './components/headlineMobile';
 import Navbar from './components/navbar';
 
 export default function Home() {
   return (
     <main>
-      <head>
+      <head></head>
 
-      </head>
-
-      <body className=" mx-auto font-sans min-h-screen">
+      <body className="mx-auto min-h-screen font-sans">
         <div className="flex min-h-screen flex-col bg-primary text-white">
           <Navbar pageTitle="home" className="" />
 
@@ -23,9 +23,20 @@ export default function Home() {
               <HeadlineDesktop
                 className="font-space"
                 text="Feng shui app, Simmons, secures 2M Series-A funding round →"
+                href="#"
               />
               {/* should add HeadlineMobile later */}
             </div>
+
+            <div className=" md:hidden">
+              <HeadlineMobile
+                className="font-space"
+                text="Feng shui app, Simmons, secures 2M Series-A funding round →"
+                href="#"
+              />
+              {/* should add HeadlineMobile later */}
+            </div>
+
             <h1 className="hidden pb-4 font-space text-[64px] font-bold md:block">
               Designer, Developer, <br />
               Pianist
@@ -127,14 +138,14 @@ export default function Home() {
             <ul className="items-center space-y-6 text-[16px] capitalize lg:space-y-4 lg:text-[24px]">
               <li className="flex flex-col lg:flex-row ">
                 <p className="w-1/3 font-space font-bold">2023.06.69</p>
-                <Link href="#" className="w-2/3">
+                <Link href="#" className="lg:w-2/3">
                   i have a website now!
                 </Link>
               </li>
 
               <li className="flex flex-col lg:flex-row ">
                 <p className="w-1/3 font-space font-bold">2023.06.69</p>
-                <Link href="#" className="w-2/3">
+                <Link href="#" className="lg:w-2/3">
                   interview with emiliano garcia-lopez: on feng shui and ella
                   simmons
                 </Link>
@@ -142,14 +153,14 @@ export default function Home() {
 
               <li className="flex flex-col lg:flex-row">
                 <p className="w-1/3 font-space font-bold">2023.06.69</p>
-                <Link href="#" className="w-2/3">
+                <Link href="#" className="lg:w-2/3">
                   i have a website now!
                 </Link>
               </li>
 
               <li className="flex flex-col lg:flex-row ">
                 <p className="w-1/3 font-space font-bold">2023.06.69</p>
-                <Link href="#" className="w-2/3">
+                <Link href="#" className="lg:w-2/3">
                   interview with emiliano garcia-lopez: on feng shui and ella
                   simmons
                 </Link>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar(props: any) {
   return (
-    <nav className=" pt-2 md:pt-6 font-sans">
+    <nav className=" pt-2 font-sans md:pt-6">
       <Link href="/">
         <div className="relative flex h-full flex-row items-center pt-4 text-white lg:ml-20">
           <div className="ml-8">
