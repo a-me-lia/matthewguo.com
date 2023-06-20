@@ -6,7 +6,7 @@ export default function Footer(props: any) {
   return (
 <footer>
 
-            <div className='pt-48 flex flex-col lg:flex-row lg:items-center mx-6 space-y-8 lg:space-y-0 pb-12'>
+            <div className='pt-48 flex flex-col lg:flex-row lg:items-center mx-6 space-y-8 lg:space-y-0 pb-12 text-white'>
 
  
             <div className='flex flex-col xl:flex-row xl:items-center xl:space-y-0 space-y-8  lg:ml-20 lg:w-full'> 

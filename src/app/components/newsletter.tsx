@@ -41,7 +41,7 @@ var APIRequest = () => {
 
 
           <button
-          className={` bg-darkAccent px-5 py-1 hover:bg-slate-500 ${
+          className={` bg-darkAccent px-5 py-1 hover:bg-slate-500 text-white ${
             state === "LOADING" ? "button-gradient-loading" : ""
           }`}
           type="button"

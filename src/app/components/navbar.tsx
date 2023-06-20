@@ -7,7 +7,7 @@ export default function Navbar(props: any) {
 
 
 
-<Link href='/'><div className='relative flex flex-row h-full items-center lg:ml-20 pt-4'>
+<Link href='/'><div className='relative flex flex-row h-full items-center lg:ml-20 pt-4 text-white'>
 
                 
 <div className='ml-8'>       {/*for some reason this markup necessary to render correctly   */}

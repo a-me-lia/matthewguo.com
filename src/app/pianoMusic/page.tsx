@@ -22,7 +22,7 @@ export default function PianoMusic() {
 
       <body className=" min-h-screen mx-auto">
 
-      <div className='flex flex-col bg-primary min-h-screen'>
+      <div className='flex flex-col bg-primary min-h-screen text-white'>
         
 
           <Navbar pageTitle ='piano' className=''/>
