@@ -63,17 +63,17 @@ export default function Home() {
                   </div>
 
                   <div className='flex flex-col mt-8 md:w-1/2'>
-                    <Link href='#' className=' flex flex-row w-full py-3 border-b-2 hover:block'>
+                    <Link href='projects' className=' flex flex-row w-full py-3 border-b-2 hover:block'>
                       <p className='w-full md:text-[36px]'>Web/App Design </p>
                       <div className='md:hidden'><Arrow w='25' h='22'></Arrow></div> {/* kinda fucked ngl */}
                       <div className='hidden '><Arrow w='53' h='46'></Arrow></div>
                     </Link>
-                    <Link href='#' className=' flex flex-row w-full py-3 border-b-2 hover:block'>
+                    <Link href='projects' className=' flex flex-row w-full py-3 border-b-2 hover:block'>
                       <p className='w-full md:text-[36px]'>Electronics </p>
                       <div className='md:hidden'><Arrow w='25' h='22'></Arrow></div>
                       <div className='hidden '><Arrow w='53' h='46'></Arrow></div>
                     </Link>
-                    <Link href='#' className=' flex flex-row w-full py-3 border-b-2 hover:block'>
+                    <Link href='piano+music' className=' flex flex-row w-full py-3 border-b-2 hover:block'>
                       <p className='w-full md:text-[36px]'>Piano and Music </p>
                       <div className='md:hidden'><Arrow w='25' h='22'></Arrow></div>
                       <div className='hidden '><Arrow w='53' h='46'></Arrow></div>
