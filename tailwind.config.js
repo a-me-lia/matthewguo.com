@@ -11,18 +11,18 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       fontFamily: {
-        'inter' : ['Inter', 'sans-serif'],
-        'space' : ['Space Grotesk', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        space: ['Space Grotesk', 'sans-serif'],
       },
-      
+
       colors: {
         primary: '#190038',
         darkAccent: '#2E0067',
         darkerPrimary: '#06002E',
         lightaccent: '#5F077D',
-        darkbg: '#06002E'
+        darkbg: '#06002E',
       },
     },
   },
   plugins: [],
-}
+};

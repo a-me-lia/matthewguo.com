@@ -1,9 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-import axios from "axios";
-
-
-
+import axios from 'axios';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 function getRequestParams(email: any) {
   // get env variables
@@ -12,7 +9,7 @@ function getRequestParams(email: any) {
   // mailchimp datacenter - mailchimp api keys always look like this:
   // fe4f064432e4684878063s83121e4971-us6
   // We need the us6 part
-  const DATACENTER = " us21";
+  const DATACENTER = ' us21';
 
   const url = `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
 
@@ -20,13 +17,13 @@ function getRequestParams(email: any) {
   // https://mailchimp.com/developer/reference/lists/list-members/
   const data = {
     email_address: email,
-    status: "subscribed",
+    status: 'subscribed',
   };
 
   // Api key needs to be encoded in base 64 format
-  const base64ApiKey = Buffer.from(`anystring:${API_KEY}`).toString("base64");
+  const base64ApiKey = Buffer.from(`anystring:${API_KEY}`).toString('base64');
   const headers = {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
     Authorization: `Basic ${base64ApiKey}`,
   };
 
@@ -37,24 +34,19 @@ function getRequestParams(email: any) {
   };
 }
 
-
-var ping = async(
-  req: NextApiRequest,
-  res: NextApiResponse
-) => {
-  
-
+const ping = async (req: NextApiRequest, res: NextApiResponse) => {
   const { email } = req.body;
 
   if (!email || !email.length) {
     return res.status(400).json({
-      error: "Forgot to add your email?",
+      error: 'Forgot to add your email?',
     });
   }
 
   try {
     const { url, data, headers } = getRequestParams(email);
 
+    // eslint-disable-next-line unused-imports/no-unused-vars
     const response = await axios.post(url, data, { headers });
 
     // Success
@@ -65,7 +57,7 @@ var ping = async(
     });
 
     // Report error to Sentry or whatever
-}
-}
+  }
+};
 
 export default ping;
