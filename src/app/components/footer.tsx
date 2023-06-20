@@ -1,11 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import Newsletter from './newsletter';
 import Slash from './slash';
-
-{
-  /* import Newsletter from './newsletter'; */
-}
 
 export default function Footer(props: any) {
   return (
@@ -46,7 +43,7 @@ export default function Footer(props: any) {
           <a className="text-[18px] text-white lg:uppercase ">
             subscribe to updates
           </a>
-          {/* <Newsletter></Newsletter> */}
+          <Newsletter></Newsletter>
         </div>
       </div>
     </footer>

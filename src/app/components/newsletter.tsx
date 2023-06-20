@@ -49,10 +49,10 @@ const APIRequest = () => {
       </div>
 
       {state === 'ERROR' && (
-        <p className="relative mt-2 w-full text-red-600 z-50">{errorMessage}</p>
+        <p className="relative z-50 mt-2 w-full text-red-600">{errorMessage}</p>
       )}
       {state === 'SUCCESS' && (
-        <p className="relative mt-2 w-full text-green-600 z-50">Success!</p>
+        <p className="relative z-50 mt-2 w-full text-green-600">Success!</p>
       )}
     </div>
   );

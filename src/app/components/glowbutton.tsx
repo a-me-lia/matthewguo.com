@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function glowbutton(props: any) {
   return (
     <div>
-      <div className="relative z-20 w-fit border-2 border-white border-opacity-50 md:border-white md:border-opacity-100">
+      <div className="relative z-20 w-fit border-2 border-white/ md:border-white/100">
         <div className="px-4 py-1 md:px-8 md:pb-[0.60rem] md:pt-2">
           {' '}
           <Link href={props.href} className="">
