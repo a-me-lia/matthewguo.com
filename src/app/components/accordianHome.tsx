@@ -65,7 +65,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
   function toggleAccordion2() {
     if (lastToggled === 1 && active1 === true) {
       setActive1((prevState) => !prevState);
-      setHeight1(active1 ? '0px' : `${contentSpace1.current.scrollHeight}px`);
+      setHeight1(active1 ? '0px' : `80px`);
       setRotate1(
         active1
           ? 'transform duration-700 ease'
@@ -99,7 +99,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
   function toggleAccordion3() {
     if (lastToggled === 1 && active1 === true) {
       setActive1((prevState) => !prevState);
-      setHeight1(active1 ? '0px' : `${contentSpace1.current.scrollHeight}px`);
+      setHeight1(active1 ? '0px' : `80px`);
       setRotate1(
         active1
           ? 'transform duration-700 ease'
