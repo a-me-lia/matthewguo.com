@@ -173,7 +173,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
                   ></Image>
                 </div>
                 <div className="space-y-2 p-4">
-                  <h1 className="">ELLA SIMMONS KAWAII</h1>
+                  <h1 className="">BING CHILLGIN</h1>
                   <p className="w-full  md:mr-6">
                     ella simmons has extremely balanced feng shui, we can fit
                     even more text here
@@ -223,7 +223,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
                   ></Image>
                 </div>
                 <div className="space-y-2 p-4">
-                  <h1 className="">ELLA SIMMONS KAWAII</h1>
+                  <h1 className="">BING CHILLGIN</h1>
                   <p className="w-full  md:mr-6">
                     ella simmons has extremely balanced feng shui, we can fit
                     even more text here
@@ -275,7 +275,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
                   ></Image>
                 </div>
                 <div className="space-y-2 p-4">
-                  <h1 className="">ELLA SIMMONS KAWAII</h1>
+                  <h1 className="">BING CHILLGINI</h1>
                   <p className="w-full  md:mr-6">
                     ella simmons has extremely balanced feng shui, we can fit
                     even more text here

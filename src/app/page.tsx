@@ -23,7 +23,7 @@ export default function Home() {
             <HeroGraphic></HeroGraphic>
           </div>
 
-          <div className="ml-6 mt-32 space-y-4 lg:ml-36">
+          <div className="ml-6 mt-16 space-y-4 md:mt-32 lg:ml-36">
             <div className="hidden md:block">
               <HeadlineDesktop
                 className="font-space"
