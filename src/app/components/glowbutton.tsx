@@ -1,14 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function glowbutton(props: any) {
   return (
     <div>
-      <div className="relative z-20 w-fit border-2 border-white/50 transition duration-1000 hover:scale-150 md:border-white/100">
+      <div className="relative z-20 w-fit border-2 border-white/50 transition duration-1000 hover:scale-110 md:border-white/100">
         <div className="px-4 py-1 md:px-8 md:pb-[0.60rem] md:pt-2">
-          {" "}
+          {' '}
           <Link href={props.href} className="">
             {props.text}
-          </Link>{" "}
+          </Link>{' '}
         </div>
       </div>
 
