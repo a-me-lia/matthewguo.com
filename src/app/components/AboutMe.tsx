@@ -24,8 +24,8 @@ export default function AboutMe(props: any) {
         </h1>
       </div>
 
-      <div className="md:mt-16 flex w-full flex-col lg:flex-row lg:space-x-8 xl:space-x-12">
-        <div className="flex flex-col pb-12 md:pb-0 md:flex-row md:space-x-16 lg:w-1/2 lg:flex-col lg:space-x-0 ">
+      <div className="flex w-full flex-col md:mt-16 lg:flex-row lg:space-x-8 xl:space-x-12">
+        <div className="flex flex-col pb-12 md:flex-row md:space-x-16 md:pb-0 lg:w-1/2 lg:flex-col lg:space-x-0 ">
           <div className="mt-6 space-y-8 md:w-1/2 lg:w-full">
             <p className="md:pb-12">
               Marin Kitagawa is an above-average height girl with a slim
