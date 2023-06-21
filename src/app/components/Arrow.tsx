@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function HomeLine(props: any) {
+export default function Arrow(props: any) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
