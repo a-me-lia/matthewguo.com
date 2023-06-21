@@ -28,13 +28,13 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
   border-radius: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 /* Handle */
@@ -47,6 +47,6 @@ body {
   background: #555;
 }
 
-::-webkit-scrollbar-track-piece{
-  background: #06002E;
+::-webkit-scrollbar-track-piece {
+  background: #06002e;
 }

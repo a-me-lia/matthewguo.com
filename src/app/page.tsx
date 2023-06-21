@@ -2,9 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import AboutMe from './components/AboutMe';
-import Arrow from './components/arrow';
 import Blog from './components/blog';
-import Button from './components/button';
 import Footer from './components/footer';
 import GlowButton from './components/glowbutton';
 import HeadlineDesktop from './components/headlineDesktop';

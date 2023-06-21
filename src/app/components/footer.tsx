@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import Newsletter from './newsletter';
-import Slash from './slash';
+import Newsletter from "./newsletter";
+import Slash from "./slash";
 
 export default function Footer(props: any) {
   return (
