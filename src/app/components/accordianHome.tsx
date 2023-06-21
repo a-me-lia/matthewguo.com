@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import React, { useRef, useState } from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useRef, useState } from 'react';
 
-import Arrow from "./arrow";
+import Arrow from './Arrow';
 
 interface AccordionProps {
   title: React.ReactNode;
@@ -14,13 +14,13 @@ interface AccordionProps {
 export const Accordion: React.FC<AccordionProps> = ({ title }) => {
   const [active1, setActive1] = useState(true);
   const [height1, setHeight1] = useState(`320px`);
-  const [rotate1, setRotate1] = useState("transform duration-700 ease");
+  const [rotate1, setRotate1] = useState('transform duration-700 ease');
   const [active2, setActive2] = useState(false);
-  const [height2, setHeight2] = useState("0px");
-  const [rotate2, setRotate2] = useState("transform duration-700 ease");
+  const [height2, setHeight2] = useState('0px');
+  const [rotate2, setRotate2] = useState('transform duration-700 ease');
   const [active3, setActive3] = useState(false);
-  const [height3, setHeight3] = useState("0px");
-  const [rotate3, setRotate3] = useState("transform duration-700 ease");
+  const [height3, setHeight3] = useState('0px');
+  const [rotate3, setRotate3] = useState('transform duration-700 ease');
   const [lastToggled, setLastToggled] = useState(1);
 
   const contentSpace1 = useRef(null);
@@ -32,20 +32,20 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
       setActive2((prevState) => !prevState);
 
       // @ts-ignore
-      setHeight2(active2 ? "0px" : `${contentSpace2.current.scrollHeight}px`);
+      setHeight2(active2 ? '0px' : `${contentSpace2.current.scrollHeight}px`);
       setRotate2(
         active2
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     } else if (lastToggled === 3 && active3 === true) {
       setActive3((prevState) => !prevState);
       // @ts-ignore
-      setHeight3(active3 ? "0px" : `${contentSpace3.current.scrollHeight}px`);
+      setHeight3(active3 ? '0px' : `${contentSpace3.current.scrollHeight}px`);
       setRotate3(
         active3
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     }
 
@@ -53,11 +53,11 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
     if (lastToggled !== 1) {
       setActive1((prevState) => !prevState);
       // @ts-ignore
-      setHeight1(active1 ? "0px" : `${contentSpace1.current.scrollHeight}px`);
+      setHeight1(active1 ? '0px' : `${contentSpace1.current.scrollHeight}px`);
       setRotate1(
         active1
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     }
   }
@@ -65,20 +65,20 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
   function toggleAccordion2() {
     if (lastToggled === 1 && active1 === true) {
       setActive1((prevState) => !prevState);
-      setHeight1(active1 ? "0px" : `${contentSpace1.current.scrollHeight}px`);
+      setHeight1(active1 ? '0px' : `${contentSpace1.current.scrollHeight}px`);
       setRotate1(
         active1
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     } else if (lastToggled === 3 && active3 === true) {
       setActive3((prevState) => !prevState);
       // @ts-ignore
-      setHeight3(active3 ? "0px" : `${contentSpace3.current.scrollHeight}px`);
+      setHeight3(active3 ? '0px' : `${contentSpace3.current.scrollHeight}px`);
       setRotate3(
         active3
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     }
 
@@ -87,11 +87,11 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
       setActive2((prevState) => !prevState);
 
       // @ts-ignore
-      setHeight2(active2 ? "0px" : `${contentSpace2.current.scrollHeight}px`);
+      setHeight2(active2 ? '0px' : `${contentSpace2.current.scrollHeight}px`);
       setRotate2(
         active2
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     }
   }
@@ -99,21 +99,21 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
   function toggleAccordion3() {
     if (lastToggled === 1 && active1 === true) {
       setActive1((prevState) => !prevState);
-      setHeight1(active1 ? "0px" : `${contentSpace1.current.scrollHeight}px`);
+      setHeight1(active1 ? '0px' : `${contentSpace1.current.scrollHeight}px`);
       setRotate1(
         active1
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     } else if (lastToggled === 2 && active2 === true) {
       setActive2((prevState) => !prevState);
 
       // @ts-ignore
-      setHeight2(active2 ? "0px" : `${contentSpace2.current.scrollHeight}px`);
+      setHeight2(active2 ? '0px' : `${contentSpace2.current.scrollHeight}px`);
       setRotate2(
         active2
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     }
 
@@ -121,11 +121,11 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
       setLastToggled(3);
       setActive3((prevState) => !prevState);
       // @ts-ignore
-      setHeight3(active3 ? "0px" : `${contentSpace3.current.scrollHeight}px`);
+      setHeight3(active3 ? '0px' : `${contentSpace3.current.scrollHeight}px`);
       setRotate3(
         active3
-          ? "transform duration-700 ease"
-          : "transform duration-700 ease rotate-180"
+          ? 'transform duration-700 ease'
+          : 'transform duration-700 ease rotate-180'
       );
     }
   }
@@ -155,7 +155,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
           className="overflow-auto overflow-y-hidden border-2 duration-700  ease-in-out"
         >
           <Link href="projects">
-            {" "}
+            {' '}
             <div className="relative h-72 md:h-40">
               <div className="absolute inset-0 z-10 opacity-100 transition duration-1000 ease-in-out hover:opacity-100 md:opacity-0">
                 <div className="absolute right-2 top-4 md:bottom-4">
@@ -163,7 +163,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
                 </div>
               </div>
               <div className="flex h-full flex-col md:flex-row">
-                {" "}
+                {' '}
                 <div className="relative h-1/2 shrink-0 py-2 md:h-full md:w-1/3">
                   <Image
                     src="/Hoshino.jpg"
@@ -205,7 +205,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
           className="overflow-auto overflow-y-hidden border-2 duration-700 ease-in-out"
         >
           <Link href="projects">
-            {" "}
+            {' '}
             <div className="relative h-72 md:h-40">
               <div className="absolute inset-0 z-10 opacity-100 transition duration-1000 ease-in-out hover:opacity-100 md:opacity-0">
                 <div className="absolute right-2 top-4 md:bottom-4">
@@ -213,7 +213,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
                 </div>
               </div>
               <div className="flex h-full flex-col md:flex-row">
-                {" "}
+                {' '}
                 <div className="relative h-1/2 shrink-0 py-2 md:h-full md:w-1/3">
                   <Image
                     src="/Hoshino.jpg"
@@ -257,7 +257,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
           className="overflow-auto overflow-y-hidden border-2 duration-700 ease-in-out"
         >
           <Link href="pianoMusic">
-            {" "}
+            {' '}
             <div className="relative h-72 md:h-40">
               <div className="absolute inset-0 z-10 opacity-100 transition duration-1000 ease-in-out hover:opacity-100 md:opacity-0">
                 <div className="absolute right-2 top-4 md:bottom-4">
@@ -265,7 +265,7 @@ export const Accordion: React.FC<AccordionProps> = ({ title }) => {
                 </div>
               </div>
               <div className="flex h-full flex-col md:flex-row">
-                {" "}
+                {' '}
                 <div className="relative h-1/2 shrink-0 py-2 md:h-full md:w-1/3">
                   <Image
                     src="/Hoshino.jpg"

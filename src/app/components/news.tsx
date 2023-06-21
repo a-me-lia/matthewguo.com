@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Arrow from './arrow';
+import Arrow from './Arrow';
 
 export default function news(props: any) {
   return (
