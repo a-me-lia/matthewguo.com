@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import AboutMe from './components/AboutMe';
-import Arrow from './components/Arrow';
+import Arrow from './components/arrow';
 import Blog from './components/blog';
-import Button from './components/Button';
+import Button from './components/button';
 import Footer from './components/footer';
 import GlowButton from './components/glowbutton';
 import HeadlineDesktop from './components/headlineDesktop';
@@ -21,7 +21,7 @@ export default function Home() {
         <div className="flex min-h-screen flex-col bg-primary text-white">
           <Navbar pageTitle="home" className="" />
 
-          <div className="absolute right-0 top-72 h-[270px] w-[326px] opacity-50 md:top-20 md:h-[500px] md:w-[600px] md:opacity-25 lg:opacity-50 xl:right-24">
+          <div className="absolute right-0 top-72 h-[270px] w-[326px] opacity-50 md:top-32 md:h-[500px] md:w-[600px] md:opacity-25 lg:opacity-50 xl:right-24">
             <HeroGraphic></HeroGraphic>
           </div>
 
@@ -52,7 +52,7 @@ export default function Home() {
             <GlowButton href="#" text="Hire me now" />
           </div>
 
-          <div className="mt-36 h-min rounded-t-[80px] bg-gradient-to-b from-darkbg via-darkbg via-60% to-transparent drop-shadow-[0_-200px_200px_rgba(255,255,255,0.04)] md:mt-32 lg:rounded-t-[160px]">
+          <div className="mt-36 h-min rounded-t-[80px] bg-gradient-to-b from-darkbg via-darkbg via-60% to-transparent drop-shadow-[0_-200px_200px_rgba(255,255,255,0.04)] md:mt-48 lg:rounded-t-[160px]">
             <div className="mx-6 mt-8 flex flex-col lg:mx-12 xl:mx-36">
               <AboutMe></AboutMe>
 
@@ -64,11 +64,11 @@ export default function Home() {
             <h1 className="z-10 font-space text-[24px] font-bold md:pt-6 md:text-[64px]">
               Latest News
             </h1>
-            <p className=' mt-2 hover:underline capitalize'>go to latest posts ></p>
+            <p className=" mt-2 capitalize hover:underline">
+              go to latest posts &gt;
+            </p>
 
             <News></News>
-
-
 
             <div className="mb-8 mt-16 h-[10px] w-full rounded-full bg-gradient-to-b from-transparent via-lightaccent to-transparent md:mt-32"></div>
             <h1 className="z-10 py-6 font-space text-[24px] font-bold md:text-[64px]">

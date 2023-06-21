@@ -16,7 +16,7 @@ export default function Footer(props: any) {
                   <Slash h="51" w="45"></Slash>
                 </div>
                 <div className="hidden md:block">
-                  <Slash h="110" w="96"></Slash>
+                  <Slash h="69" w="96"></Slash>
                 </div>
               </div>
 
