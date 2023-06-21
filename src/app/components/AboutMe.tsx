@@ -24,10 +24,10 @@ export default function AboutMe(props: any) {
         </h1>
       </div>
 
-      <div className="mt-16 flex w-full flex-col lg:flex-row lg:space-x-8 xl:space-x-12">
-        <div className="flex flex-col  md:flex-row md:space-x-16 lg:w-1/2 lg:flex-col lg:space-x-0 ">
+      <div className="md:mt-16 flex w-full flex-col lg:flex-row lg:space-x-8 xl:space-x-12">
+        <div className="flex flex-col pb-12 md:pb-0 md:flex-row md:space-x-16 lg:w-1/2 lg:flex-col lg:space-x-0 ">
           <div className="mt-6 space-y-8 md:w-1/2 lg:w-full">
-            <p className="pb-12">
+            <p className="md:pb-12">
               Marin Kitagawa is an above-average height girl with a slim
               waistline and light skin tone. Her eyes are naturally a dark
               brown, though she is almost always seen with dark pink color

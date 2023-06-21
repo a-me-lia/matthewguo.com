@@ -19,11 +19,11 @@ export default function Home() {
         <div className="flex min-h-screen flex-col bg-primary text-white">
           <Navbar pageTitle="home" className="" />
 
-          <div className="absolute right-0 top-72 h-[270px] w-[326px] opacity-50 md:top-32 md:h-[500px] md:w-[600px] md:opacity-25 lg:opacity-50 xl:right-24">
+          <div className="absolute right-0 top-64 h-[270px] w-[326px] opacity-50 md:top-32 md:h-[500px] md:w-[600px] md:opacity-25 lg:opacity-50 xl:right-24">
             <HeroGraphic></HeroGraphic>
           </div>
 
-          <div className="ml-6 mt-16 space-y-4 md:mt-32 lg:ml-36">
+          <div className="ml-6 mt-8 md:mt-16 space-y-4 md:mt-32 lg:ml-36">
             <div className="hidden md:block">
               <HeadlineDesktop
                 className="font-space"
