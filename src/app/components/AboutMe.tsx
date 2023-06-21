@@ -1,6 +1,9 @@
+
+
 import Link from 'next/link';
 import React from 'react';
 
+import {Accordion} from './Accordion';
 import Arrow from './Arrow';
 import Button from './Button';
 import Slash from './slash';
@@ -25,8 +28,9 @@ export default function AboutMe(props: any) {
         </h1>
       </div>
 
-      <div className="mt-8 flex flex-col md:flex-row md:items-center md:space-x-8 lg:space-x-32">
-        <div className="flex flex-col space-y-8 md:w-1/2">
+      <div className="mt-8 flex flex-col lg:flex-row w-full lg:space-x-8 xl:space-x-12">
+        <div className="flex flex-col md:flex-row lg:flex-col lg:w-1/2 md:mt-8 md:space-x-16 lg:space-x-0 ">
+          <div className='md:w-1/2 lg:w-full space-y-8'>
           <p>
             Marin Kitagawa is an above-average height girl with a slim waistline
             and light skin tone. Her eyes are naturally a dark brown, though she
@@ -35,58 +39,23 @@ export default function AboutMe(props: any) {
           </p>
           <Button href="#" text="Read My Story"></Button>{' '}
           {/* how would i push this button down to align with the bototm like on the figma */}
+</div>
+          <div className='mt-8 md:mt-0 lg:mt-12'>
+            <h1 className='md:text-[32px] pb-4'>at a glace...</h1>
+            <p>- Hardworking</p>
+            <p>- Not an Anime Girl</p>
+            <p>- Not in Debt</p>
+            <p>- I am definitely not Ella Simmons</p>
+          </div>
         </div>
 
-        <div className="mt-8 flex flex-col md:w-1/2">
-
-
-
-          
-          <Link
-            href="projects"
-            className="relative flex w-full flex-row border-b-2 py-3 "
-          >
-            <div>
-              <p className="w-full md:text-[36px]">Web/App Design </p>
-              <div className="absolute inset-0  hidden hover:block">
-                <div className="absolute  right-0 top-4">
-                  <Arrow w="53" h="46"></Arrow>
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link
-            href="projects"
-            className="relative flex w-full flex-row border-b-2 py-3 "
-          >
-            <div>
-              <p className="w-full md:text-[36px]">Electronics </p>
-              <div className="absolute inset-0  hidden hover:block">
-                <div className="absolute  right-0 top-4">
-                  <Arrow w="53" h="46"></Arrow>
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link
-            href="projects"
-            className="relative flex w-full flex-row border-b-2 py-3 "
-          >
-            <div>
-              <p className="w-full md:text-[36px]">Piano and Music </p>
-              <div className="absolute inset-0  hidden hover:block">
-                <div className="absolute  right-0 top-4">
-                  <Arrow w="53" h="46"></Arrow>
-                </div>
-              </div>
-            </div>
-          </Link>
-
+        <div className="mt-8 flex flex-col md:hidden">
 
 
         </div>
+        <div className="md:mt-16 lg:mt-0  w-full lg:w-1/2">
+              <Accordion></Accordion> {/* TODO: template out the accordian feature so it's usable usiversally*/}
+          </div>
       </div>
     </div>
   );

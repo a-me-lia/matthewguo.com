@@ -6,7 +6,7 @@ import Slash from './slash';
 export default function Navbar(props: any) {
   return (
     <nav className="pt-2 font-sans md:pt-6">
-      <div className=" flex flex-row items-center pt-4 text-white lg:ml-20">
+      <div className=" flex flex-row items-center pt-4 text-white xl:ml-20">
         <Link href="/" className=" flex flex-row items-center">
           <div className="ml-8">
             <div className="relative">

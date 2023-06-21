@@ -6,7 +6,7 @@ import Arrow from './Arrow';
 export default function news(props: any) {
   return (
     <div className="h-fit w-full  rounded-[80px] bg-gradient-to-b from-black via-transparent  via-10%">
-      <ul className=" mt-12 flex flex-row space-x-4 overflow-x-auto from-black via-transparent via-20% md:h-[400px] md:w-full md:flex-col md:space-x-0 md:space-y-10 md:rounded-[80px] md:border-y-4 md:bg-gradient-to-t">
+      <ul className=" mt-12 flex flex-row space-x-4 overflow-x-auto from-black via-transparent via-20% md:h-[400px] md:w-full md:flex-col md:space-x-0 md:space-y-10 md:rounded-[80px] md:border-y-4 border-lightaccent md:bg-gradient-to-t">
         <li className="relative h-[500px] w-[300px]  shrink-0 border-b-2 border-white bg-gradient-to-b from-darkAccent  md:mt-20 md:h-[240px] md:w-full md:rounded-[20px] md:border-none md:bg-gradient-to-l md:from-[#2E0067B0] md:via-[#2E006740] md:via-80% ">
           <div className="flex flex-col md:flex-row-reverse md:p-[10px]">
             <div className="relative h-[200px] w-full shrink-0 md:h-[220px] md:w-[380px]">
@@ -17,7 +17,7 @@ export default function news(props: any) {
                 fill
               ></Image>
 
-              <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80">
+              <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out  duration-300 hover:opacity-80">
                 <div className="relative z-50 ml-[130px] mt-[73px]">
                   <Arrow h="75" w="120"></Arrow>
                 </div>
@@ -50,7 +50,7 @@ export default function news(props: any) {
                 fill
               ></Image>
 
-              <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80">
+              <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out duration-300 hover:opacity-80">
                 {' '}
                 <div className="relative z-50 ml-[130px] mt-[73px]">
                   {' '}
@@ -84,7 +84,7 @@ export default function news(props: any) {
                 fill
               ></Image>
 
-              <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out hover:opacity-80">
+              <div className="absolute inset-0 z-0 h-full w-full overflow-hidden rounded-[20px] bg-slate-700 bg-fixed opacity-0 transition ease-in-out duration-300 hover:opacity-80">
                 {' '}
                 <div className="relative z-50 ml-[130px] mt-[73px]">
                   {' '}
