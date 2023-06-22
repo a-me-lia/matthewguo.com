@@ -30,7 +30,7 @@ export default function Navbar(props: any) {
             <Link
               href="#"
               className="hidden px-6
-           hover:underline md:block lg:px-12"
+           hover:underline md:block lg:px-6"
             >
               sitemap
             </Link>
