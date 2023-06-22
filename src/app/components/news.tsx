@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Arrow from './Arrow';
 
-export default function news(props: any) {
+export default function news() {
   return (
     <div className="h-fit w-full ">
       <ul className=" mt-12 flex flex-row space-x-4 overflow-auto border-lightaccent from-black via-transparent via-20%  md:flex-col md:space-x-0 md:space-y-8 ">

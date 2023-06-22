@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
 import AboutMe from './components/AboutMe';
 import Blog from './components/blog';
 import Footer from './components/footer';
@@ -10,7 +7,6 @@ import HeadlineMobile from './components/headlineMobile';
 import HeroGraphic from './components/heroGraphic';
 import Navbar from './components/navbar';
 import News from './components/news';
-import Slash from './components/slash';
 
 export default function Home() {
   return (
